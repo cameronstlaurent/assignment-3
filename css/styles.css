@@ -1,0 +1,571 @@
+
+
+:root {
+	--dk-blue: #344256;
+	--green: #648a69;
+	--yellow: #f3d900;
+	--grey: #eaedef;
+	--white: #ffff;
+}
+
+
+/** general styling**/
+
+html {
+	font-size: 62.5%;
+}
+
+body,
+footer li,
+.email-sign-up button,
+label {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.6rem;
+	margin: 0 auto;
+	color: var(--dk-blue);
+}
+
+li a {
+	text-decoration: none;
+}
+
+li,
+h1,
+h2,
+h3,
+.meme p,
+button,
+input[type=submit],
+button a,
+a p,
+li a {
+	color: var(--dk-blue);
+	font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+	font-size: 3.6rem;
+	padding-bottom: 2rem;
+}
+
+.home-main section:nth-child(2) h2,
+.home-main section:last-child h2 {
+	color: var(--white)
+}
+
+.hidden {
+	display: none;
+}
+
+header nav {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.7s ease-in-out;
+}
+
+main .container {
+	padding: 0rem 2rem 5rem 2rem;
+}
+
+.card-content h3 {
+	margin: 2rem 0px 2rem 0px;
+}
+
+section button {
+	background-color: #f3d900;
+	text-decoration: none;
+	font-size: 1.8rem;
+	padding: 1rem;
+	margin-top: 3.5rem;
+	margin-bottom: 2.6rem;
+	margin: 3.5rem 0px 2.6rem 0px;
+	border: none;
+	border-radius: 3px;
+}
+
+
+/**end of general styling**/
+
+
+/**navigation styling**/
+
+nav li {
+	border-bottom: 1px solid black;
+	line-height: 40px;
+}
+
+.toggle-btn {
+	border: none;
+	background-color: var(--yellow);
+	border-radius: 50px;
+	outline: none;
+}
+
+.show-nav {
+	max-height: 60rem;
+}
+
+header .flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+svg rect {
+	fill: #3f3f3f;
+}
+
+header {
+	padding: 2rem;
+	background-color: #ffffff;
+	box-shadow: 3px 3px 3px 3px #cbcbd1;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+
+/**end of navigation styling**/
+
+
+/** search bar section styling**/
+
+.search-bar h2 {
+	margin-top: 6rem;
+}
+
+.home-main input[type=text] {
+	width: 98%;
+	border: 1px solid black;
+	border-radius: 10px;
+	height: 4rem;
+	margin-top: 2rem;
+	background-image: url("../img/search-icon.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	margin-bottom: 4rem;
+	padding-right: 5rem;
+}
+
+
+/**"Our Network is here for you" styling**/
+
+.our-network {
+	background-color: var(--green);
+	color: white;
+	padding: 5rem 0rem 5rem 0rem;
+}
+
+.our-network .cards {
+	color: black;
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: auto;
+	border-radius: 20px;
+}
+
+.our-network .card:first-child {
+	border-radius: 10px 10px 0px 0px;
+}
+
+.our-network .card:last-child {
+	border-radius: 0px 0px 10px 10px;
+}
+
+.our-network .card {
+	background: white;
+	position: relative;
+	padding: 3rem 1rem 3rem 1rem;
+}
+
+.our-network .card a {
+	color: black;
+	text-decoration-color: #f3d900;
+}
+
+.our-network .card-content p {
+	margin-bottom: 3rem;
+}
+
+
+/**end of "Our Network is here for you" styling**/
+
+
+/** horizontal scroll **/
+
+.scroll {
+	display: flex;
+	margin-bottom: 2rem;
+}
+
+.scroll-overflow {
+	overflow: scroll;
+	scrollbar-width: none;
+}
+
+.scroll-overflow::-webkit-scrollbar {
+	background: transparent;
+	width: 0;
+}
+
+.meme {
+	display: flex;
+	min-width: 150px;
+	width: 150px;
+	margin-right: 10rem;
+}
+
+.meme p {
+	margin-left: 1rem;
+}
+
+section:nth-child(3) {
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+}
+
+
+/**end of horizontal scroll**/
+
+
+/**"when would you need us?" section**/
+
+section:nth-child(4) {
+	background-color: #eaedef;
+	padding-top: 6rem;
+	padding-bottom: 2rem;
+}
+
+.when-would-you-need .card {
+	margin-top: 4rem;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px 3px #cbcbd1;
+}
+
+.card img {
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.when-would-you-need .card-content {
+	padding: 0px 1rem 3rem 1rem;
+}
+
+.when-would-you-need .cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: auto;
+}
+
+
+/**end of "when would you need us?" section**/
+
+
+/**email sign up section**/
+
+.email-sign-up {
+	background-color: #648a69;
+	padding-top: 5rem;
+	color: white;
+}
+
+.home-main input[type=email] {
+	border: none;
+	margin-bottom: 5rem;
+	margin-top: 2rem;
+	height: 4.5rem;
+	border-radius: 8px 0px 0px 8px;
+	width: 64%;
+}
+
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	overflow: hidden;
+}
+
+.email-sign-up button {
+	border-radius: 0px 10px 10px 0px;
+	background-color: #ffff;
+	padding: 13px;
+}
+
+
+/*footer content*/
+
+footer h2 {
+	font-size: 1.8rem;
+	padding: 3rem 0rem 1rem;
+}
+
+footer .flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer .flex-container .logo {
+	flex-basis: 100%;
+}
+
+footer li {
+	line-height: 2;
+}
+
+footer .container {
+	padding: 6rem 2rem 6rem 2rem;
+}
+
+footer .text-container {
+	width: 200px;
+}
+
+.disclaimer {
+	background-color: var(--green);
+	color: white;
+	padding: 3rem 2rem 3rem 2rem;
+}
+
+.disclaimer p {
+	width: 70%;
+}
+
+
+/**hover effects**/
+
+section button:hover {
+	color: var(--yellow);
+	background-color: var(--dk-blue);
+}
+
+.scroll>div:hover,
+.scroll>div:active {
+	background: rgba(000, 000, 000, .2);
+}
+
+.toggle-btn:hover {
+	cursor: pointer;
+}
+
+.our-network .card a:hover {
+	text-decoration-color: var(--green);
+}
+
+
+/**form styling**/
+
+.form-main section:first-child,
+form {
+	padding: 5rem 3rem 0rem 3rem;
+}
+
+.form-main section:first-child p {
+	padding: 3rem 0rem 6rem 0rem;
+}
+
+.parallax-image {
+	background-image: url("../img/project-form-parallax-img.webp");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 230px;
+	padding: 9rem 0rem 0rem 3rem;
+}
+
+.form-main section:last-child {
+	background-color: var(--green);
+	color: white;
+}
+
+input:focus {
+	outline: none;
+}
+
+label {
+	display: block;
+	padding: 3rem 0rem 1.2rem 0rem;
+	color: var(--white);
+}
+
+input {
+	height: 4rem;
+	width: 100%;
+	border-radius: 1rem;
+	border: none;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+textarea {
+	resize: none;
+	width: 100%;
+	height: 35rem;
+	border: none;
+	border-radius: 1rem;
+	padding-top: 1rem;
+	padding-left: 1rem;
+}
+
+input[type=submit] {
+	margin: 3rem 0rem 5rem 0rem;
+	width: 13rem;
+	height: 6rem;
+	background-color: var(--yellow);
+}
+
+.required:after {
+	content: " *";
+	color: red;
+}
+
+.required-hint {
+	color: red;
+}
+
+form input[required]:invalid {
+	border: 2px solid red;
+}
+
+form input[required]:valid {
+	border: 2px solid green;
+}
+
+.form-main .text-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 3rem 3rem 0rem 3rem;
+}
+
+@media only screen and (min-width: 750px) {
+	h2 {
+		font-size: 4.8rem;
+	}
+	.home-main input[type=email] {
+		width: 87%;
+	}
+	.our-network .cards {
+		justify-content: space-between;
+	}
+	.our-network .card,
+	.our-network .card:first-child,
+	.our-network .card:last-child {
+		width: 48%;
+		margin-top: 3rem;
+		border-radius: 10px;
+	}
+	form .flex-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.form-main section:first-child>.flex-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.form-main section:first-child>.flex-container>div {
+		flex-basis: 45%;
+	}
+	form .flex-container>div {
+		flex-basis: 48%;
+	}
+	.budget {
+		width: 48%;
+	}
+	textarea {
+		width: 100%;
+	}
+	.description {
+		flex-basis: 100% !important;
+	}
+	.when-would-you-need .card {
+		display: flex;
+	}
+	.email-underline {
+		text-decoration: underline;
+		text-decoration-color: var(--yellow);
+	}
+}
+
+@media only screen and (min-width: 1160px) {
+	body {
+		width: 1160px;
+		margin: 0 auto;
+	}
+	main .container {
+		padding: 0px 3rem 0px 3rem;
+	}
+	footer .flex-container {
+		justify-content: space-between;
+	}
+	.toggle-btn {
+		display: none;
+	}
+	.home-main input[type=email] {
+		width: 43%;
+	}
+	.our-network .container:first-child {
+		width: 40%;
+	}
+	.our-network .container:last-child {
+		width: 70%;
+	}
+	.our-network {
+		display: flex;
+	}
+	input[type=number] {
+		width: 20%;
+	}
+	.budget {
+		flex-basis: 100% !important;
+	}
+	textarea {
+		width: 48%;
+	}
+	.our-network .card {
+		padding: 5rem 2rem 5rem 2rem;
+	}
+	.form-main section:first-child>.flex-container>div {
+		flex-basis: 20%;
+	}
+	header nav {
+		max-height: 2rem;
+		position: static;
+		width: 60%;
+		overflow: visible;
+	}
+	.when-would-you-need .card {
+		display: block;
+		width: 32%;
+	}
+	header,
+	nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	nav li {
+		border: none;
+	}
+	.home-main input[type=text] {
+		width: 55%;
+	}
+	footer .flex-container .logo {
+		flex-basis: 20%;
+	}
+}
+
+
+
+
+
+
+
+
